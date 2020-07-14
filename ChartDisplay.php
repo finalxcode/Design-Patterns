@@ -21,6 +21,8 @@ class ChartDisplay
     }
 }
 
+// 开闭
+
 //上面一个图表显示类可以显示饼图和折线图，如果这个时候我们想要显示柱状图，怎么办？
 //就需要增加一个柱状图的类，同时修改chartdispaly类中display的显示方法，这就破坏了开闭原则。
 //开闭原则要求对扩展开放，对修改关闭。虽然我们实现了扩展，但是修改了chartdisplay类
@@ -28,6 +30,8 @@ class ChartDisplay
 //我们定义abstractChartDisplay抽象类，让piechart和linechart类作为其子类
 
 
+
+// 依赖倒置
 
 //上层模块不应该依赖下层模块，两者都应该依赖其抽象
 //在这里我们将chartDisplay看做上层模块，它依赖pieChart和lineChart模块，也就是下层模块

@@ -18,6 +18,12 @@ interface IUserService
 //那么所有使用userService类的接口都有可能被其他业务系统使用，
 //可能导致误删除用户的情况存在。
 
+
+interface IUserRestrictService
+{
+    public function deleteUserById($id);
+}
+
 //正确的做法是，我们需要将删除接口的功能单独放在另外一个接口中，
 //使用接口隔离来限制部分接口只能单独被所对应的调用者使用。
 //而不是强迫其他调用者也依赖这部分不会被调用到的接口功能
