@@ -18,6 +18,8 @@
    > `ChartDisplay`类
 
    #### 迪米特原则
-   > 改进之前：`Document`类， `HtmlDownloader`类， `Serialization`类
-   > 改进之后：`DocumentV2`类，`DocumentFactory`类， `Serialization`类
+   > 改进之前：`Document`类， `HtmlDownloader`类， `Serialization`类 （丢弃）
+   > 改进之后：`DocumentV2`类，`DocumentFactory`类， `Serialization`类 （丢弃）
    
+   > 改进之前：`Teacher`类， `GroupLeader`类， `Student`类， `CoffeeMachine`类, `Staff`类
+   > 改进之后：`TeacherV2`类， `GroupLeaderV2`类， `StudentV2`类， `CoffeeMachineV2`类, `StaffV2`类
